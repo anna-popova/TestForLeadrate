@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// @font-face {
+// 	font-family: "Montserrat";
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-display: swap;
+// 	src:
+// 	  url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+// 	  url("../fonts/Montserrat-Regular.woff") format("woff"),
+// 	  url("../fonts/Montserrat-Regular.eot") format("eot"),
+// 	  url("../fonts/Montserrat-Regular.ttf") format("ttf"),
+//  }
+ 
+//  @font-face {
+// 	font-family: "Montserrat";
+// 	font-style: medium;
+// 	font-weight: 500;
+// 	font-display: swap;
+// 	src:
+// 	url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+// 	url("../fonts/Montserrat-Medium.woff") format("woff"),
+// 	url("../fonts/Montserrat-Medium.eot") format("eot"),
+// 	url("../fonts/Montserrat-Medium.ttf") format("ttf"),
+//  }
+ 
+//  @font-face {
+// 	font-family: "Montserrat";
+// 	font-style: bold;
+// 	font-weight: 700;
+// 	font-display: swap;
+// 	src:
+// 	url("../fonts/Montserrat-Bold.woff") format("woff2"),
+// 	url("../fonts/Montserrat-Bold.woff") format("woff"),
+// 	url("../fonts/Montserrat-Bold.eot") format("eot"),
+// 	url("../fonts/Montserrat-Bold.ttf") format("ttf"),
+//  }
+
+html {
+	height: 100%;
+ }
+
+ body {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	height: 100%;
+	margin: 0;
+	background-color: #161C2E;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+#app {
+	text-align: center;
+}
