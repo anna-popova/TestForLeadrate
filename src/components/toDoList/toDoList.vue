@@ -4,7 +4,12 @@
     <h1 class="to-do-list__title">ToDo List</h1>
   <buttonComponent></buttonComponent>
   </div>
-  <checkboxComponent></checkboxComponent>
+  <checkboxComponent
+    title="Задача"
+    subtitle="Подзадача"
+    :checked="isChecked"
+    @input="toggle"
+  />
 </div>
 </template>
 
@@ -17,6 +22,16 @@ export default {
   components: {
     checkboxComponent,
     buttonComponent,
+  },
+  methods: {
+    toggle(value) {
+      this.isChecked = value;
+    },
+  },
+  data() {
+    return {
+      isChecked: true,
+    };
   },
 };
 </script>
