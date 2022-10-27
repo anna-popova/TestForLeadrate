@@ -1,7 +1,7 @@
 <template>
   <div class="to-do-list">
     <div class="to-do-list__header">
-      <h1 class="to-do-list__title">ToDo List</h1>
+      <h1 class="to-do-list__title">ToDo list</h1>
     <buttonComponent></buttonComponent>
     </div>
     <checkboxComponent
@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      isChecked: true,
+      isChecked: false,
     };
   },
 };

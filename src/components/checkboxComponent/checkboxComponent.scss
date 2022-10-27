@@ -33,8 +33,15 @@
 			font-size: 16px;
 
 			&_subtitle {
-				font-size: 12px;
-				color: #4F5565;
+              display: inline-block;
+              margin-top: 3px;
+              font-size: 12px;
+              font-weight: 400;
+              color: #4F5565;
+              max-width: 310px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis
 			}
 		}
 	}
