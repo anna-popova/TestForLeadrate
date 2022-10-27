@@ -1,4 +1,18 @@
 .checkbox-list {
+	height: 80%;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: 4px;               /* ширина scrollbar */
+	}
+	&::-webkit-scrollbar-track {
+		background: #252E42;        /* цвет дорожки */
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 20px;       /* закругления плашки */
+		border: 3px solid #FF8469;  /* padding вокруг плашки */
+	}
+
 	&__item {
 		display: flex;
 		align-items: center;
