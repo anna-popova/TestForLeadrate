@@ -8,4 +8,8 @@
 	border: none;
 	border-radius: 7px;
 	cursor: pointer;
+
+	&:hover {
+		background-color: #D95133;
+	}
 }
