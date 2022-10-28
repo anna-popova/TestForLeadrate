@@ -3,14 +3,18 @@
     <div class="to-do-list__container">
       <div class="to-do-list__header">
         <h1 class="to-do-list__title">ToDo list</h1>
-        <buttonComponent></buttonComponent>
+        <buttonComponent text="ADD" @click="addToDoItem"></buttonComponent>
       </div>
-      <checkboxComponent
-        title="Задача"
-        subtitle="Подзадача"
-        :checked="isChecked"
-        @input="toggle"
-      />
+      <div class="to-do-list__checkboxes">
+        <checkboxComponent
+          :title="toDoItem.title"
+          :subtitle="toDoItem.subtitle"
+          :checked="toDoItem.isChecked"
+          @input="toggle(toDoItem)"
+          v-for="(toDoItem, index) in toDoItems"
+          :key="index"
+        />
+      </div>
     </div>
     <div class="to-do-list__black-block"></div>
     <div class="to-do-list__blue-block"></div>
@@ -28,13 +32,34 @@ export default {
     buttonComponent,
   },
   methods: {
-    toggle(value) {
-      this.isChecked = value;
+    toggle(toDoItem) {
+      toDoItem.isChecked = !toDoItem.isChecked;
+    },
+    addToDoItem() {
+      this.toDoItems.push(
+        {
+          title: 'Name',
+          subtitle: 'Name',
+          isChecked: false,
+        },
+      );
     },
   },
   data() {
     return {
       isChecked: false,
+      toDoItems: [
+        {
+          title: 'Name',
+          subtitle: 'Name',
+          isChecked: false,
+        },
+        {
+          title: 'Name2',
+          subtitle: 'Name2',
+          isChecked: false,
+        },
+      ],
     };
   },
 };
