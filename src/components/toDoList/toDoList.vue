@@ -1,15 +1,19 @@
 <template>
   <div class="to-do-list">
-    <div class="to-do-list__header">
-      <h1 class="to-do-list__title">ToDo list</h1>
-    <buttonComponent></buttonComponent>
+    <div class="to-do-list__container">
+      <div class="to-do-list__header">
+        <h1 class="to-do-list__title">ToDo list</h1>
+        <buttonComponent></buttonComponent>
+      </div>
+      <checkboxComponent
+        title="Задача"
+        subtitle="Подзадача"
+        :checked="isChecked"
+        @input="toggle"
+      />
     </div>
-    <checkboxComponent
-    title="Задача"
-    subtitle="Подзадача"
-    :checked="isChecked"
-    @input="toggle"
-    />
+    <div class="to-do-list__black-block"></div>
+    <div class="to-do-list__blue-block"></div>
   </div>
 </template>
 
