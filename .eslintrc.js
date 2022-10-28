@@ -16,5 +16,6 @@ module.exports = {
     'linebreak-style': 'off',
     'no-trailing-spaces': 'warn',
     'vuejs-accessibility/label-has-for': 'off',
+    'no-param-reassign': 'off',
   },
 };
