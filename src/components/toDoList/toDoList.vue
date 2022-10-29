@@ -18,6 +18,7 @@
     </div>
     <div class="to-do-list__black-block"></div>
     <div class="to-do-list__blue-block"></div>
+    <div class="to-do-list__halo"></div>
   </div>
 </template>
 
