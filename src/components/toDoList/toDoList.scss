@@ -1,5 +1,11 @@
 .to-do-list {
 	position: relative;
+	width: 420px;
+	height: 540px;
+
+	@media screen and (max-width: 450px) {
+		width: 397px;
+	}
 
 	&::after {
 		content: "";
@@ -34,18 +40,13 @@
 
 	&__container {
 		position: relative;
-		width: 420px;
-		height: 540px;
+		height: 100%;
 		padding: 30px;
 		background-color: #252E42;
 		border-top-left-radius: 20px;
 		border-bottom-right-radius: 40px;
 		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 		z-index: 3;
-
-		@media screen and (max-width: 450px) {
-			width: 397px;
-		}
 	}
 
 	&__header {
@@ -72,6 +73,10 @@
 		border-radius: 20px;
 		transform: rotate(-4.48deg);
 		z-index: 1;
+
+		@media screen and (max-width: 450px) {
+			width: 330px;
+		}
 	}
 
 	&__blue-block {
@@ -83,5 +88,9 @@
 		border-radius: 20px;
 		transform: rotate(-2.32deg);
 		z-index: 2;
+
+		@media screen and (max-width: 450px) {
+			width: 370px;
+		}
 	}
 }
